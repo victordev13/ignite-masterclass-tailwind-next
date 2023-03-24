@@ -1,4 +1,5 @@
 import { Logo } from "./icons/Logo";
+import NavLink from './NavLink';
 
 export function Sidebar() {
   return (
@@ -12,13 +13,13 @@ export function Sidebar() {
           </strong>
 
           <div className="text-sm flex flex-col pl-2">
-            <a className="px-4 py-1.5 border-l border-white/5 text-zinc-400 hover:text-white transition-colors" href="">Introduction</a>
-            <a className="px-4 py-1.5 border-l border-white/5 text-zinc-400 hover:text-white transition-colors" href="">Quickstart</a>
-            <a className="px-4 py-1.5 border-l border-white/5 text-zinc-400 hover:text-white transition-colors" href="">SDKs</a>
-            <a className="px-4 py-1.5 border-l border-white/5 text-zinc-400 hover:text-white transition-colors" href="">Authentication</a>
-            <a className="px-4 py-1.5 border-l border-white/5 text-zinc-400 hover:text-white transition-colors" href="">Pagination</a>
-            <a className="px-4 py-1.5 border-l border-white/5 text-zinc-400 hover:text-white transition-colors" href="">Errors</a>
-            <a className="px-4 py-1.5 border-l border-white/5 text-zinc-400 hover:text-white transition-colors" href="">Webhooks</a>
+            <NavLink href="/docs/intro">Introduction</NavLink>
+            <NavLink href="/docs/quickstart">Quickstart</NavLink>
+            <NavLink href="/docs/sdks">SDKs</NavLink>
+            <NavLink href="/docs/auth">Authentication</NavLink>
+            <NavLink href="/docs/pagination">Pagination</NavLink>
+            <NavLink href="/docs/errors">Errors</NavLink>
+            <NavLink href="/docs/webhooks">Webhooks</NavLink>
           </div>
         </div>
         <div className="flex flex-col gap-4">
@@ -27,11 +28,11 @@ export function Sidebar() {
           </strong>
 
           <div className="text-sm flex flex-col pl-2">
-            <a className="px-4 py-1.5 border-l border-white/5 text-zinc-400 hover:text-white transition-colors" href="">Contacts</a>
-            <a className="px-4 py-1.5 border-l border-white/5 text-zinc-400 hover:text-white transition-colors" href="">Conversations</a>
-            <a className="px-4 py-1.5 border-l border-white/5 text-zinc-400 hover:text-white transition-colors" href="">Messages</a>
-            <a className="px-4 py-1.5 border-l border-white/5 text-zinc-400 hover:text-white transition-colors" href="">Groups</a>
-            <a className="px-4 py-1.5 border-l border-white/5 text-zinc-400 hover:text-white transition-colors" href="">Attachments</a>
+            <NavLink href="/docs/contacts">Contacts</NavLink>
+            <NavLink href="/docs/conversations">Conversations</NavLink>
+            <NavLink href="/docs/messages">Messages</NavLink>
+            <NavLink href="/docs/groups">Groups</NavLink>
+            <NavLink href="/docs/attachments">Attachments</NavLink>
           </div>
         </div>
       </nav>
